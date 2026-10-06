@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Morat - Club de Fans</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>MORAT</h1>
+        <p>La música que nos une</p>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="canciones.html">Canciones</a>
+            <a href="giras.html">Giras</a>
+            <a href="merch.html">Merch</a>
+            <a href="club.html">Club de Fans</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="formulario">
+
+            <h2>Club de Fans de Morat</h2>
+
+            <p>
+                Completá el formulario para formar parte del
+                club de fans y recibir novedades de Morat.
+            </p>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>Datos personales</legend>
+
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div>
+                        <label for="fecha">Fecha de nacimiento:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+
+                    <div>
+                        <label for="pais">País:</label>
+                        <input type="text" id="pais" name="pais" required>
+                    </div>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>Sobre Morat</legend>
+
+                    <div>
+                        <label for="cancion">¿Cuál es tu canción favorita?</label>
+
+                        <select id="cancion" name="cancion">
+                            <option value="">Seleccioná una canción</option>
+                            <option>Cómo Te Atreves</option>
+                            <option>Besos en Guerra</option>
+                            <option>Cuando Nadie Ve</option>
+                            <option>Amor Con Hielo</option>
+                            <option>Mi Nuevo Vicio</option>
+                            <option>No Se Va</option>
+                        </select>
+                    </div>
+
+
+                    <div>
+
+                        <label>¿Qué contenido te interesa?</label>
+
+                        <div class="opciones">
+
+                            <label>
+                                <input type="checkbox" name="intereses" value="canciones">
+                                Nuevas canciones
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="intereses" value="giras">
+                                Giras y conciertos
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="intereses" value="merch">
+                                Merch
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="intereses" value="novedades">
+                                Novedades
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+
+                        <label>¿Cómo conociste a Morat?</label>
+
+                        <div class="opciones">
+
+                            <label>
+                                <input type="radio" name="conocio" value="amigos">
+                                Amigos
+                            </label>
+
+                            <label>
+                                <input type="radio" name="conocio" value="redes">
+                                Redes sociales
+                            </label>
+
+                            <label>
+                                <input type="radio" name="conocio" value="canciones">
+                                Por sus canciones
+                            </label>
+
+                            <label>
+                                <input type="radio" name="conocio" value="concierto">
+                                En un concierto
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="mensaje">
+                            ¿Qué significa Morat para vos?
+                        </label>
+
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="5"
+                            placeholder="Escribí tu respuesta..."></textarea>
+
+                    </div>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>Crear cuenta</legend>
+
+                    <div>
+
+                        <label for="password">Contraseña:</label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            minlength="8"
+                            required>
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="confirmar">Confirmar contraseña:</label>
+
+                        <input
+                            type="password"
+                            id="confirmar"
+                            name="confirmar"
+                            minlength="8"
+                            required>
+
+                    </div>
+
+                </fieldset>
+
+
+                <div class="terminos">
+
+                    <label>
+                        <input type="checkbox" required>
+
+                        Acepto los términos y condiciones.
+                    </label>
+
+                </div>
+
+
+                <div class="botones">
+
+                    <button type="submit">
+                        Unirme al Club
+                    </button>
+
+                    <button type="reset">
+                        Limpiar
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Fan Page de Morat</p>
+    </footer>
+
+</body>
+
+</html>

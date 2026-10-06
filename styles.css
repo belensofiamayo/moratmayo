@@ -1,0 +1,331 @@
+/* ESTILOS GENERALES */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f1e8;
+    color: #6b3535;
+    line-height: 1.6;
+}
+
+
+/* ENCABEZADO */
+
+header {
+    background: #814c5c;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 45px;
+    letter-spacing: 5px;
+}
+
+header p {
+    margin: 5px 0 20px;
+}
+
+
+/* MENÚ */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #d4a373;
+}
+
+
+/* CONTENIDO */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+
+/* PRESENTACIÓN */
+
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.principal .texto {
+    flex: 1;
+}
+
+.principal h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #172c24;
+}
+
+.principal img {
+    width: 40%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+/* TARJETAS */
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.tarjetas article {
+    background: white;
+    width: 31%;
+    min-width: 250px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tarjetas h2 {
+    margin-bottom: 10px;
+    color: #172c24;
+}
+
+.tarjetas p {
+    margin-bottom: 15px;
+}
+
+.tarjetas a {
+    color: #172c24;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tarjetas a:hover {
+    color: #d4a373;
+}
+
+
+/* FORMULARIO */
+
+.formulario {
+    background: white;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+    text-align: center;
+    color: #172c24;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.formulario > p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* CAMPOS */
+
+.formulario fieldset {
+    border: 2px solid #d47390;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.formulario legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #172c24;
+    font-size: 20px;
+}
+
+.formulario fieldset > div {
+    margin-bottom: 18px;
+}
+
+.formulario fieldset > div:last-child {
+    margin-bottom: 0;
+}
+
+.formulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="date"],
+.formulario input[type="password"],
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #bbb;
+    border-radius: 7px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.formulario textarea {
+    resize: vertical;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    outline: none;
+    border: 2px solid #172c24;
+}
+
+
+/* OPCIONES */
+
+.opciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.opciones label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+    background: #f4f1e8;
+    padding: 8px 12px;
+    border-radius: 7px;
+}
+
+.opciones input {
+    width: auto;
+}
+
+
+/* TÉRMINOS */
+
+.terminos label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+}
+
+.terminos input {
+    width: auto;
+}
+
+
+/* BOTONES */
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.botones button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #172c24;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botones button:hover {
+    background: #d4a373;
+    color: #222;
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    background: #172c24;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+
+/* CELULARES */
+
+@media (max-width: 700px) {
+
+    .principal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .principal img {
+        width: 100%;
+    }
+
+    .tarjetas article {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+
+    .opciones {
+        flex-direction: column;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+}
